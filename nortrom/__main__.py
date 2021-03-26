@@ -9,8 +9,8 @@ logging.basicConfig(level="DEBUG")
 
 
 # TODO: restrict intents
-bot = dec.Bot(command_prefix="!", intents=d.Intents.default())
-sbot = ds.SlashCommand(client=bot, sync_commands=False)
+bot = dec.Bot(command_prefix="!", intents=d.Intents(guilds=True, members=True, voice_states=True))
+sbot = ds.SlashCommand(client=bot, sync_commands=True)
 
 
 @sbot.slash(name="mute", description="Mute all members in the voice channel you're in.")
