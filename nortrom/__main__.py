@@ -19,6 +19,12 @@ async def _mute(ctx: ds.SlashContext):
         return
 
     channel: d.VoiceChannel = voice.channel
+
+    permissions: d.Permissions = ctx.author.permissions_in(channel=channel)
+    if not permissions.mute_members:
+        await ctx.send(content="⚠️ You don't have the _Mute Members_ permission.", hidden=True)
+        return
+
     members: list[d.Member] = channel.members
     for member in members:
         await member.edit(mute=True)
@@ -34,6 +40,12 @@ async def _unmute(ctx: ds.SlashContext):
         return
 
     channel: d.VoiceChannel = voice.channel
+
+    permissions: d.Permissions = ctx.author.permissions_in(channel=channel)
+    if not permissions.mute_members:
+        await ctx.send(content="⚠️ You don't have the _Mute Members_ permission.", hidden=True)
+        return
+
     members: list[d.Member] = channel.members
     for member in members:
         await member.edit(mute=False)
@@ -49,6 +61,12 @@ async def _deafen(ctx: ds.SlashContext):
         return
 
     channel: d.VoiceChannel = voice.channel
+
+    permissions: d.Permissions = ctx.author.permissions_in(channel=channel)
+    if not permissions.deafen_members:
+        await ctx.send(content="⚠️ You don't have the _Deafen Members_ permission.", hidden=True)
+        return
+
     members: list[d.Member] = channel.members
     for member in members:
         await member.edit(deafen=True)
@@ -64,6 +82,12 @@ async def _undeafen(ctx: ds.SlashContext):
         return
 
     channel: d.VoiceChannel = voice.channel
+
+    permissions: d.Permissions = ctx.author.permissions_in(channel=channel)
+    if not permissions.deafen_members:
+        await ctx.send(content="⚠️ You don't have the _Deafen Members_ permission.", hidden=True)
+        return
+
     members: list[d.Member] = channel.members
     for member in members:
         await member.edit(deafen=False)
