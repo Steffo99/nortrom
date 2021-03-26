@@ -5,7 +5,7 @@ A Discord bot to mute/deafen people
 
 ## Add to your server
 
-[**Click here to add the bot to your Discord server!**](https://discord.com/api/oauth2/authorize?client_id=825055494674579477&permissions=0&scope=applications.commands%20bot)
+[**Click here to add the bot to your Discord server!**](https://discord.com/api/oauth2/authorize?client_id=825055494674579477&permissions=12582912&scope=applications.commands%20bot)
 
 ## Commands
 
