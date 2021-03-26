@@ -1,6 +1,5 @@
 import typing as t
 import discord as d
-import discord.ext as de
 import discord.ext.commands as dec
 import discord_slash as ds
 import os
@@ -8,7 +7,6 @@ import logging
 logging.basicConfig(level="DEBUG")
 
 
-# TODO: restrict intents
 bot = dec.Bot(command_prefix="!", intents=d.Intents(guilds=True, members=True, voice_states=True))
 sbot = ds.SlashCommand(client=bot, sync_commands=True)
 
