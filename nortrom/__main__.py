@@ -13,7 +13,7 @@ bot = dec.Bot(command_prefix="!", intents=d.Intents.default())
 sbot = ds.SlashCommand(client=bot, sync_commands=False)
 
 
-@sbot.slash(name="mute", description="Mute all members in the voice channel you're in.", guild_ids=[176353500710699008])
+@sbot.slash(name="mute", description="Mute all members in the voice channel you're in.")
 async def _mute(ctx: ds.SlashContext):
     voice: t.Optional[d.VoiceState] = ctx.author.voice
     if voice is None:
@@ -28,7 +28,7 @@ async def _mute(ctx: ds.SlashContext):
     await ctx.send(content="🔇 Speak not.")
 
 
-@sbot.slash(name="unmute", description="Unmute all members in the voice channel you're in.", guild_ids=[176353500710699008])
+@sbot.slash(name="unmute", description="Unmute all members in the voice channel you're in.")
 async def _unmute(ctx: ds.SlashContext):
     voice: t.Optional[d.VoiceState] = ctx.author.voice
     if voice is None:
@@ -43,7 +43,7 @@ async def _unmute(ctx: ds.SlashContext):
     await ctx.send(content="🔊 Speak your last.")
 
 
-@sbot.slash(name="deafen", description="Deafen all members in the voice channel you're in.", guild_ids=[176353500710699008])
+@sbot.slash(name="deafen", description="Deafen all members in the voice channel you're in.")
 async def _deafen(ctx: ds.SlashContext):
     voice: t.Optional[d.VoiceState] = ctx.author.voice
     if voice is None:
@@ -58,7 +58,7 @@ async def _deafen(ctx: ds.SlashContext):
     await ctx.send(content="🔇 Hear not.")
 
 
-@sbot.slash(name="undeafen", description="Undeafen all members in the voice channel you're in.", guild_ids=[176353500710699008])
+@sbot.slash(name="undeafen", description="Undeafen all members in the voice channel you're in.")
 async def _undeafen(ctx: ds.SlashContext):
     voice: t.Optional[d.VoiceState] = ctx.author.voice
     if voice is None:
