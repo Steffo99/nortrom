@@ -1,11 +1,16 @@
-# ![](media/silencer_icon.webp) Nortrom
-## The Silencer Bot
+<div align="center">
 
-A Discord bot to mute/deafen people
+![](.media/icon-128x128_round.png)
 
-## Add to your server
+# Nortrom
 
-[**Click here to add the bot to your Discord server!**](https://discord.com/api/oauth2/authorize?client_id=825055494674579477&permissions=12582912&scope=applications.commands%20bot)
+Discord bot to mute/deafen entire channels
+
+</div>
+
+## Links
+
+[![Add to server](https://img.shields.io/badge/discord_bot-add-blue)](https://discord.com/api/oauth2/authorize?client_id=825055494674579477&permissions=12582912&scope=applications.commands%20bot)
 
 ## Commands
 
