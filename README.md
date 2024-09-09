@@ -10,7 +10,11 @@ Discord bot to mute/deafen entire channels
 
 ## Links
 
-[![Add to server](https://img.shields.io/badge/discord_bot-add-blue)](https://discord.com/api/oauth2/authorize?client_id=825055494674579477&permissions=12582912&scope=applications.commands%20bot)
+[![Add to server](https://img.shields.io/badge/discord_bot-add-blue)](https://discord.com/oauth2/authorize?client_id=1282746699772727488)
+
+> [!Warning]
+> 
+> Because of the incredibly little use the bot has seen recently, the bot might have been turned off. Please let me know if you need it!
 
 ## Commands
 
